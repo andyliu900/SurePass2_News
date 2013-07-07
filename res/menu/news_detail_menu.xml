@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/news_detail_share"
+        android:orderInCategory="@integer/menu_share_index"
+        android:icon="@drawable/ic_menu_share"
+        android:title="@string/news_share"/>
+	
+    <item
+        android:id="@+id/news_detail_favourite"
+        android:orderInCategory="@integer/menu_favourite_index"
+        android:icon="@drawable/ic_menu_star"
+        android:title="@string/news_favourite"/>
+</menu>

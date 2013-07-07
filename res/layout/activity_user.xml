@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white" >
+    
+	<RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#990000" >
+      
+      <TextView 
+            android:id="@+id/systv"
+			android:textAppearance="?android:textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textColor="@color/white"
+			android:textSize="21sp"/>
+      
+      <ProgressBar 
+		android:id="@+id/main_head_progress" 
+		style="@style/loading_small"
+		android:layout_marginRight="17dip"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:visibility="gone"/>
+      
+      <ImageButton
+          android:id="@+id/main_head_refresh_button"
+          android:layout_height="fill_parent"
+          android:layout_width="54dip"
+          android:clickable="true"
+          android:layout_alignParentRight="true"
+          android:scaleType="centerInside"
+          android:src="@drawable/refresh_button"
+          android:background="@drawable/head_title_wrapper_background"/>
+    </RelativeLayout>
+	
+	<include layout="@layout/activity_user_header"/>
+	
+	<com.ideacode.news.widget.ScrollLayout   
+	  android:id="@+id/user_scrolllayout"    
+	  android:layout_width="fill_parent"    
+	  android:layout_height="fill_parent"
+   	  android:layout_weight="1">    
+  
+ 	  <include layout="@layout/frame_mood"/>
+      
+	  <include layout="@layout/frame_user"/>
+	  
+	  <include layout="@layout/frame_favourite"/>
+        
+	</com.ideacode.news.widget.ScrollLayout>
+</LinearLayout>

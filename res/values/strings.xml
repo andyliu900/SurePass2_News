@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">逢考资讯</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- 闪屏文字提示 -->
+    <string name="loadinginfo">加载中...</string>
+    <string name="initsystemdataexception">初始化数据失败...</string>
+    <string name="dataloadend">数据加载完成</string>
+    
+    <string name="main_menu_login">用户登录</string>
+    <string name="main_menu_logout">注销登录</string>
+    
+    <string name="title_news_category_focus">焦点</string>
+	<string name="title_news_category_civil">公务员</string>
+	<string name="title_news_category_work">就业</string>
+	<string name="title_news_category_collegeexam">高考</string>
+	<string name="title_news_category_graduate">考研</string>
+	<string name="title_news_category_china">国内</string>
+	<string name="title_news_category_world">国际</string>
+	<string name="title_news_category_more">更多</string>
+	<string name="announce_at">发布于</string>
+	
+	<string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_update">最近更新：</string>
+    
+    <!-- News Start -->
+    <string name="news_head_title">新闻一览</string>
+    <string name="news_dedail_title">新闻正文</string>
+    <string name="news_share">分享</string>
+    <string name="news_favourite">收藏</string>
+    <string name="msg_load_is_null">读取失败，可能已被删除</string>
+    <!-- News End -->
+    
+    <!-- Setting Start -->
+    <string name="setting_head_title">系统设置</string>
+    <string name="about_head_title">关于我们</string>
+    <!-- Setting End -->
+    
+    <string name="helpCopyright">逢考必过(SurePass)资讯版由IdeaCode移动开发工作室独立完成，欢迎各用户下载使用，如有bug可通过以下途径于我们联系，我们会热情为您服务！</string>
+	<string name="helpContactTitle">热烈欢迎各路安卓开发爱好者一起交流学习</string>
+    <string name="helpContactQQ">腾讯的QQ：1049985299</string>
+    <string name="helpContactMail">谷歌的邮箱：andyliu900@gmail.com</string>
+    <string name="helpContactWeibo">新浪的微博：http://weibo.com/vincentsu900</string>
+    
+    <!-- Mood Start -->
+    <string name="mood_head_titld">放飞心情</string>
+    <string name="mood_user_text">此刻的心情</string>
+    <string name="usermood_user_text">的心情</string>
+    <string name="mood_location">地点</string>
+    <string name="mood_praise">顶</string>
+    <string name="mood_belittle">踩</string>
+    <string name="add_mood_title">发送心情</string>
+    <string name="what_thinking">此刻的你在想什么呢？</string>
+    <string name="mood_add_point">添加地点</string>
+    <string name="mood_pointting">正在定位...</string>
+    <string name="mood_dialog_title">提示</string>
+    <string name="mood_dialog_message">是否取消发布?</string>
+    <string name="mood_send_empty">您还未输入内容,请输入后重试</string>
+    <string name="mood_send_toolong_error">发送的心情不允许大于300个中文字！</string>
+    <!-- Mood End -->
+    
+    <!-- Login Dialog Start-->
+    <string name="login_dialog_account">账号:</string>
+    <string name="login_dialog_account_hint">输入账号/邮箱</string>
+    <string name="login_dialog_password">密码:</string>
+    <string name="login_dialog_password_hint">输入密码</string>
+    <string name="login_dialog_rememberMe">记住我的登录信息</string>
+    <string name="login_dialog_login">登  录</string>
+    <string name="login_dialog_reg">注  册</string>
+    <!-- Login Dialog End -->
+    
+    <!-- My Space Start -->
+    <string name="user_space_name">我的空间</string>
+    <string name="user_space_mood">我的心情</string>
+    <string name="user_space_myself">个人信息</string>
+    <string name="user_space_favourite">我的收藏</string>    
+    <string name="user_comment_text">您的回复内容：</string>
+    <string name="user_info_name_title">用户姓名：</string>
+    <string name="userEmail">邮箱</string>
+    <string name="userEmailtTips">请填写邮箱地址...</string>
+    <string name="userSex">性别</string>
+    <string name="userlocation">所在地</string>
+    <string name="userlocationHint">请填写所在地</string>
+    <string name="summary">简介</string>
+    <string name="summaryTips">请填写简介...</string>
+    <string name="summaryHint">请填写个人简介</string>
+    <string name="birthday">生日</string>
+    <string name="birthdayHint">请填写生日</string>
+    <string name="qq">QQ</string>
+    <string name="qqtTips">请填写QQ号...</string>
+    <string name="qqHint">QQ帐号</string>
+    <string name="locationDialogTitle">选择所在地</string>
+    <string name="submitupdate">提交修改</string>
+    <string name="reg">注册</string>
+    <string name="regName">账号:</string>
+    <string name="regNameHint">由任意字符构成</string>
+    <string name="regEmail">邮箱:</string>
+    <string name="regEmailHint">您常用的邮箱地址</string>
+    <string name="regSex">性别:</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="regBirthday">生日:</string>
+    <string name="regPassword">输入密码:</string>
+    <string name="regPaswordHint">区分大小写</string>
+    <string name="regPassword2">确认密码:</string>
+    <string name="regPasword2Hint">再次输入密码</string>
+    <string name="regEmptyError">以上内容都需要填写！请检查...</string>
+    <string name="regNameError">账号输入错误！</string>
+	<string name="regEmailError">邮箱输入错误！请输入正确的邮箱</string>
+	<string name="regPasswordError">两次输入的密码不一致！请重新输入确认密码</string>
+	<string name="checkEmailFail">该用户名或邮箱已存在，请重新输入！</string>
+	<string name="regUserFail">注册失败，请重新输入！</string>
+	<string name="regUserSuccess">注册成功！</string>
+    <!-- My Space End -->
+    
+    <!-- FeedBack Start-->
+    <string name="userFeedBackTitle">用户反馈</string>
+    <string name="feedbackhits">请输入您的意见和建议</string>
+    <string name="feedback_send_toolong_error">发送的反馈信息不允许大于150个中文字！</string>
+    <string name="feedback_def_title">默认反馈信息标题</string>
+    <!-- FeedBack End-->
+    
+    <!-- Find Start -->
+    <string name="find_title">探索发现</string>
+    <string name="find_pop_mood">热门心情</string>
+    <string name="find_pop_favourite">热门收藏</string>
+    <!-- Find End -->
+</resources>

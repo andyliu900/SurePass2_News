@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 新闻正文menu的展示序号 -->
+    <integer name="menu_share_index">1</integer>
+    <integer name="menu_favourite_index">2</integer>    
+</resources>

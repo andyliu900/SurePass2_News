@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="red">#f80303</color>
+	<color name="listTextColor">#333333</color>
+	<color name="listInfoColor">#525252</color>
+	<color name="activityBGColor">#FFFFFF</color>
+	<color name="processTextColor">#333333</color>
+	<color name="progressTitleColor">#ADADAD</color>
+	<color name="correctAnswerColor">#FF0000</color>
+	<color name="itemfocus">#c2c0bd</color>
+	<color name="itempress">#afafae</color>
+	<color name="deepGray">#878686</color>
+	<color name="listItemTagBGColor">#555555</color>
+	<color name="graywhite">#F5F5F5</color>
+	<color name="author_text">#0e5986</color>
+	<color name="bg_color_deep">#E5E5E5</color>
+	<!-- selected tab text -->
+    <color name="selected_tabtext">#bb000000</color>
+	<!-- non selected tab text -->
+    <color name="unselected_tabtext">#77000000</color>
+	
+	<color name="listitem_transparent">#00000000</color>
+    <color name="listitem_black">#ff000000</color>
+    <color name="listitem_white">#ffffffff</color>
+    <color name="listitem_blue">#0e5986</color>
+    <color name="listitem_gray">#ff9da19e</color>
+    <color name="listitem_green">#ffe3ffc6</color>
+    <color name="listitem_greenyellow">#ff87b869</color>
+    <color name="listitem_yellow">#fffaffbf</color>
+
+    <color name="bright_foreground_light">#ff000000</color>
+    <color name="bright_foreground_light_inverse">#ffffffff</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+    
+    <color name="dim_foreground_light">#808080</color>
+    <color name="dim_foreground_light_disabled">#80323232</color>
+    <color name="dim_foreground_light_inverse">#ff006eaa</color>
+    <color name="dim_foreground_light_inverse_disabled">#80bebebe</color>
+    
+    <color name="head_text">#0e5986</color>
+    
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+    
+    <color name="half_transparent">#aa000000</color>
+    
+    <color name="transparent_black">#33000000</color>
+</resources>

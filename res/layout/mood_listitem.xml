@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" 
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    android:paddingTop="8dip"
+    android:paddingBottom="7dip">
+    
+	<LinearLayout 
+	    android:orientation="horizontal" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content">
+        
+	    <ImageView 
+            android:id="@+id/mood_listitem_flag"
+	      	android:layout_width="14.0dip" 
+	        android:layout_height="14.0dip"
+	        android:layout_marginRight="2dip"
+	        android:layout_gravity="center_vertical"
+	        android:src="@drawable/widget_today_icon"
+	        android:visibility="gone"/>
+	    
+	    <TextView 
+	        android:id="@+id/mood_listitem_username" 
+	        android:layout_width="wrap_content" 
+	     	android:layout_height="wrap_content"
+	     	android:textStyle="bold"	     	
+	     	android:textSize="@dimen/text_size_15"
+	     	android:textColor="#0e5986"
+	     	android:singleLine="true"/>
+	    
+	    <TextView 
+	        android:layout_width="wrap_content" 
+	     	android:layout_height="wrap_content"
+	     	android:textStyle="bold"	     	
+	     	android:textSize="@dimen/text_size_15"
+	     	android:textColor="@color/listitem_black"
+	     	android:singleLine="true"
+	     	android:layout_marginLeft="10dip"
+	     	android:text="@string/mood_user_text"/>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/mood_listitem_relies"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="8dip"
+	    android:background="@drawable/review_bg_top"
+	    android:orientation="vertical" >
+	    
+	    <TextView 
+	        android:id="@+id/mood_listitem_content"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="4dip"
+	        android:textColor="@color/listitem_black"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="8dip">
+	        <TextView
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="4dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/listitem_gray"
+	            android:text="@string/announce_at"/>
+	       	
+	       	<TextView 
+	       	    android:id="@+id/mood_listitem_date"  
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content"
+	           	android:layout_marginLeft="10dip" 
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/listitem_black"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_marginTop="8dip">
+		    <TextView 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_marginLeft="4dip"
+		        android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/listitem_gray"
+		        android:text="@string/mood_location"/>
+		    
+		    <TextView 
+		        android:id="@+id/mood_listitem_location"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_marginLeft="10dip"
+		        android:singleLine="true"
+		        android:textSize="@dimen/text_size_10"
+		        android:textColor="@color/listitem_black"/>
+		</LinearLayout>
+	</LinearLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    <LinearLayout
+	        android:id="@+id/mood_belittle_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true">	        
+	        <ImageButton
+	            android:id="@+id/mood_belittle_img"
+	            android:layout_width="20dip"
+	            android:layout_height="20dip"
+	            android:background="@drawable/mood_belittle"/>
+	        <TextView
+	            android:id="@+id/mood_belittle_count"
+	            android:layout_width="wrap_content"
+	            android:layout_height="20dip"
+	            android:layout_marginRight="10dip"
+	            android:textColor="@color/listitem_gray"
+	            android:textSize="15sp"/>
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/mood_praise_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@id/mood_belittle_layout"
+	        android:orientation="horizontal" >	        
+	        <ImageButton
+	            android:id="@+id/mood_praise_img"
+	            android:layout_width="20dip"
+	            android:layout_height="20dip"
+	            android:background="@drawable/mood_praise"/>
+	        <TextView
+	            android:id="@+id/mood_praise_count"
+	            android:layout_width="wrap_content"
+	            android:layout_height="20dip"
+	            android:layout_marginRight="15dip"
+	            android:textColor="@color/listitem_gray"
+	            android:textSize="15sp"/>
+	    </LinearLayout>	    
+	</RelativeLayout>
+</LinearLayout>

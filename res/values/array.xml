@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="sexArray">
+		<item>男</item>
+		<item>女</item>
+	</string-array>
+	
+	<string-array name="tab_news_titles">
+        <item>@string/title_news_category_focus</item>
+        <item>@string/title_news_category_civil</item>
+        <item>@string/title_news_category_work</item>
+        <item>@string/title_news_category_collegeexam</item>
+        <item>@string/title_news_category_graduate</item>
+        <item>@string/title_news_category_china</item>
+        <item>@string/title_news_category_world</item>
+    </string-array>	
+</resources>

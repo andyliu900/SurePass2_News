@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+            </FrameLayout>
+        
+        	<TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        	
+        	    <RelativeLayout
+	                android:id="@+id/layout_bottom"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+	
+	                <RadioGroup
+	                    android:id="@+id/radiogroup"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="bottom"
+	                    android:background="@drawable/bottombg"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+	
+	                    <RadioButton
+	                        android:id="@+id/radio_news"
+	                        android:layout_height="wrap_content"
+	                        android:layout_width="wrap_content"
+	                        android:background="@drawable/tab_selector_news"
+	                        android:button="@null"
+	                        android:layout_weight="1"
+	                        android:checked="true" />
+	
+	                    <RadioButton
+	                        android:id="@+id/radio_mood"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/tab_selector_mood"
+	                        android:layout_weight="1"
+	                        android:button="@null" />
+	
+	                    <RadioButton
+	                        android:id="@+id/radio_user"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/tab_selector_user"
+	                        android:layout_weight="1"
+	                        android:button="@null" />
+	
+	                    <RadioButton
+	                        android:id="@+id/radio_find"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/tab_selector_find"
+	                        android:layout_weight="1"
+	                        android:button="@null" />
+	
+	                    <RadioButton
+	                        android:id="@+id/radio_setting"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/tab_selector_setting"
+	                        android:layout_weight="1"
+	                        android:button="@null" />
+                </RadioGroup>
+            </RelativeLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

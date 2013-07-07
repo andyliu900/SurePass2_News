@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/news_detail_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#990000" >
+
+        <ImageButton
+            android:id="@+id/main_head_back_button"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:background="@drawable/head_title_wrapper_background"
+            android:src="@drawable/back_n"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/flipper_head_separator" 
+            android:layout_toRightOf="@id/main_head_back_button"/>
+        
+        <TextView
+            android:id="@+id/systv"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <ProgressBar
+            android:id="@+id/main_head_progress"
+            style="@style/loading_small"
+            android:layout_marginRight="17dip"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/main_head_refresh_button"
+            android:layout_height="fill_parent"
+          	android:layout_width="54dip"
+          	android:clickable="true"
+          	android:layout_alignParentRight="true"
+          	android:scaleType="centerInside"
+          	android:src="@drawable/refresh_button"
+          	android:background="@drawable/head_title_wrapper_background"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/main_head_refresh_button"
+            android:src="@drawable/flipper_head_separator" />
+    </RelativeLayout>
+
+    <!-- 有米广告设置 -->
+    <RelativeLayout
+        android:id="@+id/OffersMiniBannerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+    
+    <ScrollView
+        android:id="@+id/news_detail_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/news_detail_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/news_detail_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0e5986"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:text="发布于"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/news_detail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <View style="@style/detail_cut_line" />
+
+            <WebView
+                android:id="@+id/news_detail_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 有米广告配置 -->
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal" >
+    </LinearLayout>
+</LinearLayout>
